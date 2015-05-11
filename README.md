@@ -3,11 +3,12 @@ The Java compiler needs to know about all classes, but the JVM does not
 
 I thought this was interesting:
 
-As long as you make sure that a Java class is available before calling its methods or
-constructor(s), it only needs to be known to the Java *compiler*, i. e.
-only at *compile time* -- and not necessarily at runtime as well. Also, `import` statements using
-the name of the class and even declarations using the (imported or fully qualified) class name
-are always fine -- even if the class is not actually available at runtime.
+As long as you make sure that a Java class is available before calling its
+methods or constructor(s), it only needs to be known to the Java *compiler*,
+i. e. only at *compile time* -- and not necessarily at runtime as well. Also,
+`import` statements using the name of the class and even declarations using
+the (imported or fully qualified) class name are always fine -- even if the
+class is not actually available at runtime.
 
 I wrote some short example code to illustrate this. In `main/`, there
 is the main class `ImportTest`. It is not part of any (explicit) package.
