@@ -1,5 +1,5 @@
-// NB: No need to import the class; using the fully
-//     qualified name works as well.
+// NB: As usual, no need to import the class; using the fully
+//     qualified name below works as well.
 import test.Importee;
 
 public class ImportTest {
